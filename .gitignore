@@ -1,0 +1,10 @@
+
+# C++ project ignored files
+
+cmake-build-debug
+*.o
+
+# IDE (CLion)
+
+.idea
+
