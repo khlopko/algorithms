@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graph_data>
+    <graph id="1">
+        <title>Graph</title>
+        <lines>
+            <line id="1"  from="1" to="2" weight="7"   />
+            <line id="2"  from="1" to="4" weight="5"   />
+            <line id="3"  from="2" to="1" weight="7"   />
+            <line id="4"  from="2" to="3" weight="8"   />
+            <line id="5"  from="2" to="4" weight="9"   />
+            <line id="6"  from="2" to="5" weight="7"   />
+            <line id="7"  from="3" to="2" weight="8"   />
+            <line id="8"  from="3" to="5" weight="5"   />
+            <line id="9"  from="4" to="1" weight="5"   />
+            <line id="10" from="4" to="2" weight="9"   />
+            <line id="11" from="4" to="5" weight="15"  />
+            <line id="12" from="4" to="6" weight="6"   />
+            <line id="13" from="5" to="2" weight="7"   />
+            <line id="14" from="5" to="3" weight="5"   />
+            <line id="15" from="5" to="4" weight="15"  />
+            <line id="16" from="5" to="6" weight="8"   />
+            <line id="17" from="5" to="7" weight="9"   />
+            <line id="18" from="6" to="4" weight="6"   />
+            <line id="19" from="6" to="5" weight="8"   />
+            <line id="20" from="6" to="7" weight="11"  />
+            <line id="21" from="7" to="5" weight="9"   />
+            <line id="22" from="7" to="6" weight="11"  />
+        </lines>
+    </graph>
+</graph_data>
