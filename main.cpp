@@ -38,6 +38,20 @@ int main(int argc, char** argv) {
 #pragma mark post
 
 void post() {
+    cout << "~~~ POST MACHINE ~~~" << endl;
+    Command cmnds[] = {
+            Command(Machine::MOVE_RIGHT_AND_JUMP, 2),
+            Command(Machine::SEE, 1, 3),
+            Command(Machine::UNSET_AND_JUMP, 4),
+            Command(Machine::MOVE_LEFT_AND_JUMP, 5),
+            Command(Machine::STOP)
+    };
+    Machine machine(cmnds);
+    cout << "before:\n";
+    machine.print_ribbon();
+    machine.run();
+    cout << "after:\n";
+    machine.print_ribbon();
 }
 
 #pragma mark nam
