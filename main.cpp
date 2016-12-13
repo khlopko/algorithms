@@ -1,23 +1,99 @@
-
-#include "graph/model.h"
-#include "graph/graph.h"
+//
+// Created by Kirill Khlopko.
+//
 
 #include <iostream>
 
 using std::cout;
 using std::endl;
 
+#include "enables.h"
+
+void post();
+void nam();
+void sorting();
+void graph();
+
+int main(int argc, char** argv) {
+
+#ifdef POST
+    post();
+#endif
+
+#ifdef NAM
+    nam();
+#endif
+
+#ifdef SORTING
+    sorting();
+#endif
+
+#ifdef GRAPH
+    graph();
+#endif
+
+    return 0;
+}
+
+#pragma mark post
+
+void post() {
+}
+
+#pragma mark nam
+
+void nam_test_1();
+void nam_test_2();
+void nam_test_word(string*);
+
+void nam() {
+    cout << "~~~ NAM ~~~" << endl;
+    nam_test_1();
+    nam_test_2();
+    nam_test_word(new string("bdkdkaadb"));
+    nam_test_word(new string("kbdabkadbd"));
+}
+
+#pragma mark sorting
+
+template<typename T>
+void print_array(T* a, const int size);
+
+void sorting() {
+}
+
+#pragma mark graph
+
 void process(const char*);
 void dijkstra(Graph&);
 void prim(Graph&);
 
-int main(int argc, char** argv) {
-    auto files = { "graph.xml", "wiki.xml" };
+void graph() {
+    cout << "~~~ GRAPH ~~~" << endl;
+    auto files = {"graph.xml", "wiki.xml"};
     for (auto f : files) {
         process(f);
         cout << endl;
     }
-    return 0;
+}
+
+#pragma mark implementations
+
+void nam_test_1() {
+}
+
+void nam_test_2() {
+}
+
+void nam_test_word(string* s) {
+}
+
+template<typename T>
+void print_array(T* a, const int size) {
+    for(int i = 0; i < size; i++) {
+        cout << a[i] << " ";
+    }
+    cout << endl;
 }
 
 const char* data = "../data/";

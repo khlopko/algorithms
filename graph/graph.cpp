@@ -1,5 +1,5 @@
 //
-// Created by Kirill Khlopko on 12/5/16.
+// Created by Kirill Khlopko.
 //
 
 #include <iostream>
