@@ -74,6 +74,11 @@ template<typename T>
 void print_array(T* a, const int size);
 
 void sorting() {
+    cout << "~~~ SORTING ~~~" << endl;
+    const int size = 15;
+    int a[] = { 5, 4, -1, -124, 21, 56, 202, 3, 32, 12, 334, 230, 203020, 23, 5 };
+    shell_sort(a, size);
+    print_array(a, size);
 }
 
 #pragma mark graph
